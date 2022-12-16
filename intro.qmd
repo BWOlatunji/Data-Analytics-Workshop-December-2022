@@ -1,6 +1,6 @@
 ---
 title: "Data Analytics Workshop"
-author: "Bilikisu Olatunji"
+author: "Business Data Laboratory"
 format: 
   revealjs:
     theme: [moon, custom-style.scss]
