@@ -240,7 +240,7 @@ code can also<br>go here
 :::
 :::
 
----------------------------------------------------------------------------
+--------------------------------------------------------------------------
 
 ## Creating R Project
 
@@ -254,6 +254,21 @@ code can also<br>go here
 ![](images/new-project.png){.absolute top="70" height="574" width="100%"}
 
 :::
+
+--------------------------------------------------------------------------
+
+## Getting help
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+1 [2 3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+- [R/RStudio help]()
+- [RStudio Community](https://community.rstudio.com/latest)
+- [Search engines](www.google.com)
+- [Stackoverflow](https://stackoverflow.com/)
 
 -------------------------------------------------------------------------
 
