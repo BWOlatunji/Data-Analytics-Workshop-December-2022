@@ -99,9 +99,8 @@ title-slide-attributes:
 
 ------------------------------------------------------------------------
 
-## Our Classes
+## Our Classes - In-person 
 
-### In-person 
 ::: {.absolute top="0" left="100%"}
 ::: sectionhead
 [1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
@@ -125,17 +124,15 @@ title-slide-attributes:
 
 ------------------------------------------------------------------------
 
-## Our Classes
+## Our Classes - Virtual
 
-### In-person 
 ::: {.absolute top="0" left="100%"}
 ::: sectionhead
 [1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
 :::
 :::
 
-
-------------------------------------------------------------------------
+<br>
 
 ## Our Curriculum
 
