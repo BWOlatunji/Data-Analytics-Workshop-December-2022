@@ -30,9 +30,6 @@ title-slide-attributes:
 
 :::
 
-## Company Introduction
-
-
 ## Today's Take-away
 
 <br/>
@@ -98,6 +95,45 @@ title-slide-attributes:
 [1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
 :::
 :::
+
+
+------------------------------------------------------------------------
+
+## Our Classes
+
+### In-person 
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
+
+::: columns
+::: {.column width="50%"}
+![](images/trainings/pics1.jpeg){.absolute top="70" right="530" height="574" width="499"}
+:::
+
+::: {.column width="50%"}
+::: {.fragment}
+::: {style="font-size: 0.45em"}
+![](images/trainings/pics2.jpeg){.absolute top="70" left="530" height="574" width="499"}
+:::
+:::
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Our Classes
+
+### In-person 
+::: {.absolute top="0" left="100%"}
+::: sectionhead
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
+:::
+:::
+
 
 ------------------------------------------------------------------------
 
