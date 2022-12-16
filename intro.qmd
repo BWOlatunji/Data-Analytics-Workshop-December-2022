@@ -22,10 +22,16 @@ title-slide-attributes:
 ::: incremental
 -   Intro :wave:
 
--   By the end of today :heavy_check_mark:
-
 -   Today's Take-away :clipboard:
+
+- Q/A
+
+- Thank you
+
 :::
+
+## Company Introduction
+
 
 ## Today's Take-away
 
@@ -49,7 +55,7 @@ title-slide-attributes:
 
 ------------------------------------------------------------------------
 
-## What does a Data Analyst?
+## What does a Data Analyst do?
 
 ::: {.absolute top="0" left="100%"}
 ::: sectionhead
@@ -68,7 +74,7 @@ title-slide-attributes:
 
 ------------------------------------------------------------------------
 
-## Why a career now as a data analyst?
+## Why a career now, as a data analyst?
 
 ::: {.absolute top="0" left="100%"}
 ::: sectionhead
@@ -129,19 +135,23 @@ title-slide-attributes:
 
 ::: columns
 ::: {.column width="70%"}
-<br> <br> Bilikisu W. Olatunji
+Bilikisu Wunmi Olatunji
 :::
 
 ::: fragment
-<br/> ... MSc (Information Technology)
+<br/> MSc (Information Technology)
 :::
 
 ::: fragment
-<br/> ... Data Scientist/RShiny Developer
+<br/> Data Scientist/RShiny Developer
 :::
 
 ::: fragment
-<br> ... Certified RStudio Instructor - Tidyverse+RShiny
+<br/> Certified RStudio Instructor, [**Tidyverse+RShiny**]{style="color:#c5488c"}
+:::
+
+::: fragment
+<br/> Certified [**Scrum Master/Product Owner/Agile Coach**]{style="color:#c5488c"}
 :::
 :::
 
@@ -161,19 +171,19 @@ title-slide-attributes:
 
 ::: columns
 ::: {.column width="70%"}
-<br> <br> Amanyiraho Robinson, Uganda
+Amanyiraho Robinson, Uganda
 :::
 
 ::: fragment
-<br/> ... BSc (Statistics)
+<br/> BSc (Statistics)
 :::
 
 ::: fragment
-<br/> ... Data Scientist/RShiny Developer
+<br/> Data Scientist/RShiny Developer
 :::
 
 ::: fragment
-<br> ... Certified RStudio Instructor - Tidyverse
+<br/> Certified RStudio Instructor, [**Tidyverse**]{style="color:#c5488c"}
 :::
 :::
 
@@ -193,19 +203,19 @@ title-slide-attributes:
 
 ::: columns
 ::: {.column width="70%"}
-<br> <br> Ridwan Adeyemo Suleiman
+Ridwan Adeyemo Suleiman
 :::
 
 ::: fragment
-<br/> ... BSc (Statistics)
+<br/> BSc (Statistics)
 :::
 
 ::: fragment
-<br/> ... Data Scientist/RShiny Developer
+<br/> Data Scientist/RShiny Developer
 :::
 
 ::: fragment
-<br> ... Udemy Instructor
+<br/> Udemy Instructor
 :::
 :::
 
@@ -225,19 +235,19 @@ title-slide-attributes:
 
 ::: columns
 ::: {.column width="70%"}
-<br> <br> Faheedah Bukola Bello
+Faheedah Bukola Bello
 :::
 
 ::: fragment
-<br/> ... BSc(Statistics)
+<br/> BSc(Statistics)
 :::
 
 ::: fragment
-<br/> ... Data Scientist/RShiny Developer
+<br/> Data Scientist/RShiny Developer
 :::
 
 ::: fragment
-<br> ... Certified Scrum Master
+<br/> Certified Scrum Master
 :::
 :::
 
