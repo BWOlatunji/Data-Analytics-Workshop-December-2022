@@ -1033,7 +1033,7 @@ write.csv(subset, "subset.csv")
 
 - You can get a view of the whole data on a new tab using the `View()` function or use the`head()` function to get the first 5 rows.
 ```{r}
-head(sales)
+knitr::kable(head(sales, 3))
 #View(sales)
 ```
 

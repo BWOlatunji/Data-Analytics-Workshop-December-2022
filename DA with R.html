@@ -1557,30 +1557,72 @@ Factors</li>
 <li>You can get a view of the whole data on a new tab using the <code>View()</code> function or use the<code>head()</code> function to get the first 5 rows.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1"></a><span class="fu">head</span>(sales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>      date warehouse client_type          product_line quantity unit_price
-1 1/6/2021   Central      Retail         Miscellaneous        8      16.85
-2 1/6/2021     North      Retail       Breaking system        9      19.29
-3 1/6/2021     North      Retail Suspension &amp; traction        8      32.93
-4 1/6/2021     North   Wholesale          Frame &amp; body       16      37.84
-5 1/6/2021   Central      Retail                Engine        2      60.48
-6 1/6/2021     North   Wholesale Suspension &amp; traction       40      37.37
-    total     payment
-1  134.83 Credit card
-2  173.61        Cash
-3  263.45 Credit card
-4  605.44    Transfer
-5  120.96 Credit card
-6 1494.80    Transfer</code></pre>
+<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">head</span>(sales, <span class="dv">3</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table>
+<colgroup>
+<col style="width: 9%">
+<col style="width: 10%">
+<col style="width: 13%">
+<col style="width: 23%">
+<col style="width: 9%">
+<col style="width: 11%">
+<col style="width: 7%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">date</th>
+<th style="text-align: left;">warehouse</th>
+<th style="text-align: left;">client_type</th>
+<th style="text-align: left;">product_line</th>
+<th style="text-align: right;">quantity</th>
+<th style="text-align: right;">unit_price</th>
+<th style="text-align: right;">total</th>
+<th style="text-align: left;">payment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1/6/2021</td>
+<td style="text-align: left;">Central</td>
+<td style="text-align: left;">Retail</td>
+<td style="text-align: left;">Miscellaneous</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">16.85</td>
+<td style="text-align: right;">134.83</td>
+<td style="text-align: left;">Credit card</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1/6/2021</td>
+<td style="text-align: left;">North</td>
+<td style="text-align: left;">Retail</td>
+<td style="text-align: left;">Breaking system</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">19.29</td>
+<td style="text-align: right;">173.61</td>
+<td style="text-align: left;">Cash</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">1/6/2021</td>
+<td style="text-align: left;">North</td>
+<td style="text-align: left;">Retail</td>
+<td style="text-align: left;">Suspension &amp; traction</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">32.93</td>
+<td style="text-align: right;">263.45</td>
+<td style="text-align: left;">Credit card</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="sourceCode cell-code" id="cb114"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1"></a><span class="co">#View(sales)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb113"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb113-1"><a href="#cb113-1"></a><span class="co">#View(sales)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>You can check the data types of your data using the <code>str()</code> function.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb115"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb115-1"><a href="#cb115-1"></a><span class="fu">str</span>(sales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb114"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1"></a><span class="fu">str</span>(sales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   1000 obs. of  8 variables:
  $ date        : chr  "1/6/2021" "1/6/2021" "1/6/2021" "1/6/2021" ...
@@ -1605,7 +1647,7 @@ Factors</li>
 <li>You can check for the descriptive statistics using the <code>summary()</code> function</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb117"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb117-1"><a href="#cb117-1"></a><span class="fu">summary</span>(sales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb116"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb116-1"><a href="#cb116-1"></a><span class="fu">summary</span>(sales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     date            warehouse         client_type        product_line      
  Length:1000        Length:1000        Length:1000        Length:1000       
@@ -1635,7 +1677,7 @@ Factors</li>
 <li>Let’s find out the total amount of all sales made.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb119"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb119-1"><a href="#cb119-1"></a><span class="fu">sum</span>(sales[<span class="st">"total"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb118"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1"></a><span class="fu">sum</span>(sales[<span class="st">"total"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 289113</code></pre>
 </div>
@@ -1644,7 +1686,7 @@ Factors</li>
 <li>Total payment by cash</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb121"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb121-1"><a href="#cb121-1"></a><span class="fu">sum</span>(sales[sales<span class="sc">$</span>payment <span class="sc">==</span> <span class="st">"Cash"</span>,][<span class="st">"total"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb120"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb120-1"><a href="#cb120-1"></a><span class="fu">sum</span>(sales[sales<span class="sc">$</span>payment <span class="sc">==</span> <span class="st">"Cash"</span>,][<span class="st">"total"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 19199.1</code></pre>
 </div>
@@ -1653,7 +1695,7 @@ Factors</li>
 <li>Most expensive item by unit price</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb123"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb123-1"><a href="#cb123-1"></a>sales[sales<span class="sc">$</span>unit_price <span class="sc">==</span> <span class="fl">66.62</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb122"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb122-1"><a href="#cb122-1"></a>sales[sales<span class="sc">$</span>unit_price <span class="sc">==</span> <span class="fl">66.62</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          date warehouse client_type product_line quantity unit_price  total
 628 27/07/2021   Central      Retail       Engine        6      66.62 399.71
@@ -1673,18 +1715,18 @@ Factors</li>
 <li>Total sales made in each warehouse</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb125"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb125-1"><a href="#cb125-1"></a><span class="co">#Central</span></span>
-<span id="cb125-2"><a href="#cb125-2"></a><span class="fu">sum</span>(sales[sales[<span class="st">"warehouse"</span>] <span class="sc">==</span> <span class="st">"Central"</span>,][<span class="st">"total"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb124"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb124-1"><a href="#cb124-1"></a><span class="co">#Central</span></span>
+<span id="cb124-2"><a href="#cb124-2"></a><span class="fu">sum</span>(sales[sales[<span class="st">"warehouse"</span>] <span class="sc">==</span> <span class="st">"Central"</span>,][<span class="st">"total"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 141982.9</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb127"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb127-1"><a href="#cb127-1"></a><span class="co">#North</span></span>
-<span id="cb127-2"><a href="#cb127-2"></a><span class="fu">sum</span>(sales[sales[<span class="st">"warehouse"</span>] <span class="sc">==</span> <span class="st">"North"</span>,][<span class="st">"total"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb126"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb126-1"><a href="#cb126-1"></a><span class="co">#North</span></span>
+<span id="cb126-2"><a href="#cb126-2"></a><span class="fu">sum</span>(sales[sales[<span class="st">"warehouse"</span>] <span class="sc">==</span> <span class="st">"North"</span>,][<span class="st">"total"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 100203.6</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb129"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb129-1"><a href="#cb129-1"></a><span class="co">#West</span></span>
-<span id="cb129-2"><a href="#cb129-2"></a><span class="fu">sum</span>(sales[sales[<span class="st">"warehouse"</span>] <span class="sc">==</span> <span class="st">"West"</span>,][<span class="st">"total"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb128"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb128-1"><a href="#cb128-1"></a><span class="co">#West</span></span>
+<span id="cb128-2"><a href="#cb128-2"></a><span class="fu">sum</span>(sales[sales[<span class="st">"warehouse"</span>] <span class="sc">==</span> <span class="st">"West"</span>,][<span class="st">"total"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 46926.49</code></pre>
 </div>
@@ -1702,8 +1744,8 @@ Factors</li>
 <li>Let’s find the frequency of sales made by warehouse.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb131"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb131-1"><a href="#cb131-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb131-2"><a href="#cb131-2"></a><span class="fu">qplot</span>(<span class="at">x =</span> warehouse,<span class="at">y =</span> total, <span class="at">fill =</span> warehouse, <span class="at">data =</span> sales, <span class="at">geom =</span> <span class="st">"col"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb130"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb130-1"><a href="#cb130-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb130-2"><a href="#cb130-2"></a><span class="fu">qplot</span>(<span class="at">x =</span> warehouse,<span class="at">y =</span> total, <span class="at">fill =</span> warehouse, <span class="at">data =</span> sales, <span class="at">geom =</span> <span class="st">"col"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="DA-with-R_files/figure-revealjs/unnamed-chunk-50-1.png" width="960" class="r-stretch"></section>
@@ -1718,11 +1760,11 @@ Factors</li>
 <li>Let’s also find the total sales made by each client from the various warehouses.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb132"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb132-1"><a href="#cb132-1"></a><span class="fu">qplot</span>(<span class="at">x =</span> warehouse, </span>
-<span id="cb132-2"><a href="#cb132-2"></a>      <span class="at">y =</span> total, </span>
-<span id="cb132-3"><a href="#cb132-3"></a>      <span class="at">fill =</span> client_type, </span>
-<span id="cb132-4"><a href="#cb132-4"></a>      <span class="at">data =</span> sales, </span>
-<span id="cb132-5"><a href="#cb132-5"></a>      <span class="at">geom =</span> <span class="st">"col"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb131"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb131-1"><a href="#cb131-1"></a><span class="fu">qplot</span>(<span class="at">x =</span> warehouse, </span>
+<span id="cb131-2"><a href="#cb131-2"></a>      <span class="at">y =</span> total, </span>
+<span id="cb131-3"><a href="#cb131-3"></a>      <span class="at">fill =</span> client_type, </span>
+<span id="cb131-4"><a href="#cb131-4"></a>      <span class="at">data =</span> sales, </span>
+<span id="cb131-5"><a href="#cb131-5"></a>      <span class="at">geom =</span> <span class="st">"col"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="DA-with-R_files/figure-revealjs/unnamed-chunk-51-1.png" width="960" class="r-stretch"></section>
@@ -1737,11 +1779,11 @@ Factors</li>
 <li>Let’s also see the payment system with the highest transactions.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb133"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb133-1"><a href="#cb133-1"></a><span class="fu">qplot</span>(<span class="at">x =</span> payment, </span>
-<span id="cb133-2"><a href="#cb133-2"></a>      <span class="at">y =</span> total, </span>
-<span id="cb133-3"><a href="#cb133-3"></a>      <span class="at">fill =</span> client_type, </span>
-<span id="cb133-4"><a href="#cb133-4"></a>      <span class="at">data =</span> sales, </span>
-<span id="cb133-5"><a href="#cb133-5"></a>      <span class="at">geom =</span> <span class="st">"col"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb132"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb132-1"><a href="#cb132-1"></a><span class="fu">qplot</span>(<span class="at">x =</span> payment, </span>
+<span id="cb132-2"><a href="#cb132-2"></a>      <span class="at">y =</span> total, </span>
+<span id="cb132-3"><a href="#cb132-3"></a>      <span class="at">fill =</span> client_type, </span>
+<span id="cb132-4"><a href="#cb132-4"></a>      <span class="at">data =</span> sales, </span>
+<span id="cb132-5"><a href="#cb132-5"></a>      <span class="at">geom =</span> <span class="st">"col"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="DA-with-R_files/figure-revealjs/unnamed-chunk-52-1.png" width="960" class="r-stretch"></section>
