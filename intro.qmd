@@ -136,6 +136,7 @@ title-slide-attributes:
 
 -   Zoom meetings
 -   Shared document management
+-   Recorded classes
 -   Email/Chat messenger
 -   Weekly/Weekend Online classes
 
