@@ -154,7 +154,7 @@ title-slide-attributes:
 -   Skill-tailored curriculum
 -   Dedicated and supportive Instructors
 -   Flexible schedule
--   Online classes
+-   Virtual classes
 -   Portfolio-ready projects
 
 <br>
@@ -243,7 +243,7 @@ Amanyiraho Robinson, Uganda
 
 ::: columns
 ::: {.column width="70%"}
-Ridwan Adeyemo Suleiman
+Adejumo Ridwan Suleiman
 :::
 
 ::: fragment
