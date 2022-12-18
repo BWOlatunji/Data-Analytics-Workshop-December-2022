@@ -1,0 +1,91 @@
+---
+title: "Data Analytics Workshop - DAY 1"
+author: "Bilikisu Olatunji"
+format: pdf
+editor: visual
+---
+
+## Today's Take-away
+
+<br/>
+
+::: incremental
+1.  Introduction to R
+2.  Data Analysis using R?
+3.  Q/A
+4.  Thank You
+:::
+
+# Introduction to R
+
+
+------------------------------------------------------------------------
+
+## What is R?
+
+
+::: {style="text-align: center"}
+-   R is a programming language and software environment for statistical computing and graphics.
+-   It's used in the field of data science for data analysis, visualization, and statistical modeling.
+:::
+
+------------------------------------------------------------------------
+
+## Why R?
+
+
+R is [**open-source**]{style="color:#c5488c"} and has a large community of users who contribute to its development and support with online resources. <br>
+
+. . .
+
+It offers a variety of [**packages**]{style="color:#c5488c"} for data manipulation, machine learning, and visualization. <br>
+
+. . .
+
+It is widely used in [**academia and industry**]{style="color:#c5488c"}, making it a valuable skill for professionals in various fields. <br>
+
+. . .
+
+R is highly [**flexible**]{style="color:#c5488c"} and allows users to create [**custom functions and scripts**]{style="color:#c5488c"}, making it suitable for a wide range of data analysis tasks. <br>
+
+. . .
+
+------------------------------------------------------------------------
+
+## Installing R and RStudio
+
+
+Download and install R \[**FIRST**\] [R language](https://cloud.r-project.org/) <br/> <br/>
+
+. . .
+
+Next, download and install [RStudio IDE](https://www.rstudio.com/products/rstudio/download/)
+
+------------------------------------------------------------------------
+
+## Difference between R and RStudio IDE
+
+
+::: columns
+::: {.column width="50%"}
+![](images/r-console.png){.absolute top="70" right="530" height="574" width="499"}
+
+:::
+
+::: {.column width="50%"}
+::: {.fragment}
+::: {style="font-size: 0.45em"}
+![](images/rstudio-ide-2.png){.absolute top="70" left="530" height="574" width="499"}
+
+:::
+:::
+:::
+:::
+
+
+
+
+
+
+
+
